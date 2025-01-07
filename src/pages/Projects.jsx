@@ -4,13 +4,23 @@ import { projects } from "../data/projects";
 import { useFilterTechnologies } from "../hooks/useFilterTechnologies";
 
 const Projects = () => {
+  const [category, setCategory] = useState("Todos");
+
   return (
     <section>
       <h2>Projetos</h2>
+
+      <button onClick={() => setCategory("Todos")}>Todos</button>
+      <button onClick={() => setCategory("Fullstack")}>Fullstack</button>
+      <button onClick={() => setCategory("Landing Page")}>Landing Page</button>
+      <button onClick={() => setCategory("Jogos")}>Jogos</button>
+
       <div id="project-cards-container">
         {projects.map((project, index) => {
           const arrCategories = useFilterTechnologies(project.technologies);
-          
+          if(!project.categories.includes(category)){
+            return;
+          }
           return (
             <div className="project-card" key={index}>
               <div className="project-image-container">
