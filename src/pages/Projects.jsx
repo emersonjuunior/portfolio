@@ -1,35 +1,58 @@
 import "./Projects.css";
+import { useState } from "react";
 import { projects } from "../data/projects";
+import { useFilterTechnologies } from "../hooks/useFilterTechnologies";
 
 const Projects = () => {
   return (
     <section>
       <h2>Projetos</h2>
-      <div className="project-card">
-        <div className="project-image-container">
-          <div
-            className="project-image-background"
-            style={{ backgroundImage: `url(${projects[0].image})` }}
-          ></div>
-          <button className="project-button">Acessar</button>
-        </div>
-        <div className="project-title-wrapper">
-          <h3>Psiconexão</h3>
-        </div>
-        <div className="project-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veniam
-          quam eaque commodi placeat dolore maxime similique impedit illo soluta
-          a tempore vero magnam doloremque fugiat repudiandae alias deleniti
-          obcaecati, quos harum.
-        </div>
-        <div className="line"></div>
-        <div className="project-icons">
-          <i className="icon devicon-html5-plain"></i>
-          <i className="icon devicon-css3-plain"></i>
-          <i className="icon devicon-javascript-plain"></i>
-          <i className="icon devicon-csharp-plain"></i>
-          <i className="icon devicon-dotnetcore-plain"></i>
-        </div>
+      <div id="project-cards-container">
+        {projects.map((project, index) => {
+          const arrCategories = useFilterTechnologies(project.technologies);
+          
+          return (
+            <div className="project-card" key={index}>
+              <div className="project-image-container">
+                <div
+                  className="project-image-background"
+                  style={{ backgroundImage: `url(${projects[0].image})` }}
+                ></div>
+                <button className="project-button">Acessar</button>
+              </div>
+              <div className="project-info-container">
+                <div className="project-title-wrapper">
+                  <h3>{project.name}</h3>
+                </div>
+                <div className="project-description">{project.description}</div>
+              </div>
+              <div className="line"></div>
+              <div className="project-icons">
+                {arrCategories.includes("1") && (
+                  <i className="icon devicon-html5-plain"></i>
+                )}
+                {arrCategories.includes("2") && (
+                  <i className="icon devicon-css3-plain"></i>
+                )}
+                {arrCategories.includes("3") && (
+                  <i className="icon devicon-javascript-plain"></i>
+                )}
+                {arrCategories.includes("4") && (
+                  <i className="icon devicon-csharp-plain"></i>
+                )}
+                {arrCategories.includes("5") && (
+                  <i className="icon devicon-dotnetcore-plain"></i>
+                )}
+                {arrCategories.includes("6") && (
+                  <i className="icon devicon-react-original"></i>
+                )}
+                {arrCategories.includes("7") && (
+                  <i className="icon devicon-firebase-plain"></i>
+                )}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
