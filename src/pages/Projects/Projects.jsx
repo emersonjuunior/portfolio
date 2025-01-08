@@ -1,12 +1,12 @@
 import "./Projects.css";
 import { useState, useEffect } from "react";
-import { projects } from "../data/projects";
-import { useFilterTechnologies } from "../hooks/useFilterTechnologies";
+import { projects } from "../../data/projects";
+import { useFilterTechnologies } from "../../hooks/useFilterTechnologies";
 
 const Projects = () => {
   const [category, setCategory] = useState("Todos");
-  const [activeButton, setActiveButton] = useState(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const [activeButton, setActiveButton] = useState("1");
+  const [isVisible, setIsVisible] = useState(true);
 
   const changeCategory = (value) => {
     setIsVisible(false);
