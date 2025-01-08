@@ -9,11 +9,13 @@ import Contacts from "./pages/Contacts/Contacts.jsx";
 
 // components
 import Header from "./components/Header.jsx";
+import StarsParticles from "./components/StarParticles.jsx";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <StarsParticles id="particles"/>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -134,6 +134,12 @@ const Projects = () => {
             </div>
           );
         })}
+        <div id="project-footer-1">
+          <i className="footer-icon acess-icon fa-brands fa-github"></i>
+          <i className="footer-icon acess-icon fa-brands fa-instagram"></i>
+          <i className="footer-icon acess-icon fa-brands fa-linkedin"></i>
+          <div className="vertical-line"></div>
+        </div>
       </div>
     </section>
   );
