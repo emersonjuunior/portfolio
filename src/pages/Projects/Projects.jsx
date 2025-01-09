@@ -19,8 +19,8 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div id="projects-title-container">
-        <h1 id="projects-title">Projetos</h1>
+      <div className="section-title">
+        <h1 className="section-h1">Projetos</h1>
       </div>
       <div id="category-buttons-container">
         <button
@@ -140,6 +140,7 @@ const Projects = () => {
           <i className="footer-icon acess-icon fa-brands fa-linkedin"></i>
           <div className="vertical-line"></div>
         </div>
+        <div id="project-footer-2"><p>emerson jr &copy; 2025</p></div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ const StarsParticles = () => {
         preset: "stars",
         background: {
           color: {
-            value: "#161616",  // Cor de fundo da animação
+            value: "#171717",  // Cor de fundo da animação
           }
         },
       }}
