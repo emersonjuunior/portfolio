@@ -26,7 +26,7 @@
 
 #languages i,
 .tech-name,
-.hidden {
+.hidden-card {
   z-index: 2;
 }
 
@@ -39,17 +39,42 @@
   position: absolute;
   bottom: 20px;
   font-size: 20px;
-  color: #b6b4b4
+  color: #b6b4b4;
 }
 
-.hidden {
+.hidden-card {
   opacity: 0;
   position: absolute;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
   transform: scaleX(-1);
   transition: opacity 0.4s ease-in-out;
 }
 
-.languages-card i,
+.back-icon {
+  margin: 0 auto 1.5em auto;
+  background-color: rgb(85, 85, 85);
+  padding: 10px;
+  width: 75%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.tech-back-name {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+.tech-description {
+  text-align: center;
+  font-size: 14px;
+  color: #c9c6c6;
+}
+
+.card-icon-wrapper i,
 .tech-name {
   animation: fade-out 2s ease-in-out;
 }
@@ -58,11 +83,11 @@
   transform: perspective(1000px) rotateY(180deg);
 }
 
-.languages-card:hover .hidden {
+.languages-card:hover .hidden-card {
   opacity: 1;
 }
 
-.languages-card:hover i,
+.languages-card:hover .card-icon-wrapper i,
 .languages-card:hover .tech-name {
   animation: fade-in 0.2s ease-in-out forwards;
 }
