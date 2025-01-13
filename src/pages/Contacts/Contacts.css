@@ -1,0 +1,137 @@
+#rocket-animation-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+#rocket-animation-container:hover #rocket-gif {
+  transform: translatey(-50vw);
+}
+
+#sun-img {
+  width: 500px;
+  height: 500px;
+  opacity: .9
+}
+
+#solar-system-container {
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#solar-system-container > div {
+  width: 30%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.planet img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+.social-media-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 250px;
+}
+
+#contacts i {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.social-media-container span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.planet {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.planet-3,
+.planet-4 {
+  justify-content: start;
+}
+
+.planet-wrapper-1 {
+  animation: orbit 5s linear infinite;
+}
+
+.planet-wrapper-2 {
+  animation: orbit 8s linear infinite reverse;
+}
+
+.planet-wrapper-3 {
+  animation: orbit-2 12s linear infinite;
+}
+
+.planet-wrapper-4 {
+  animation: orbit-2 15s linear infinite reverse;
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(50%, 50%) rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 50%) rotate(360deg) translateX(10px)
+      rotate(-360deg);
+  }
+}
+
+@keyframes orbit-2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(10px)
+      rotate(-360deg);
+  }
+}
+
+#radiant-animation {
+    animation: radiantEffect 4s ease-in-out infinite;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+  @keyframes radiantEffect {
+    0% {
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.5), 0 0 30px rgba(255, 204, 0, 0.4), 0 0 40px rgba(255, 204, 0, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(255, 204, 0, 1), 0 0 60px rgba(255, 204, 0, 0.7), 0 0 80px rgba(255, 204, 0, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.5), 0 0 30px rgba(255, 204, 0, 0.4), 0 0 40px rgba(255, 204, 0, 0.3);
+    }
+  }

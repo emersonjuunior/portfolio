@@ -45,7 +45,6 @@
     rgba(29, 120, 116, 1) 90%
   );
   color: #fffbfe;
-  box-shadow: rgb(109, 3, 221) 0px 0px 0px 0px;
   transform: translateY(2px);
   transition: 100ms;
 }
