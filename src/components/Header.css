@@ -76,7 +76,7 @@ nav a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background: #24948e;
+  background: rgb(175, 173, 173);
   transition: width 0.3s ease;
 }
 

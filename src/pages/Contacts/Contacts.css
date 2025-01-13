@@ -1,13 +1,42 @@
 #rocket-animation-container {
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
 }
 
-#rocket-animation-container:hover #rocket-gif {
-  transform: translatey(-50vw);
+#rocket-gif {
+    rotate: 90deg;
 }
 
+#rocket-animation-container {
+    padding-top: 2em;
+    opacity: 1;
+    transform: translateX(-80vw);
+    animation: rocket-slide 2s ease-in-out forwards;
+  }
+
+#contacts-title-container {
+    width: fit-content;
+    margin: 0 auto 1em auto;
+}
+
+#contacts-subtitle-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contacts h2 {
+    font-weight: 450;
+}
+
+#rocket-container {
+    width: 85%;
+    height: 150px;
+    display: flex;
+    justify-content: end;
+}
+
+/* solar system */
 #sun-img {
   width: 500px;
   height: 500px;
@@ -19,11 +48,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: slide-up 2s ease-in-out forwards;
 }
 
 #solar-system-container > div {
   width: 30%;
-  height: 600px;
+  height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,26 +123,6 @@
   animation: orbit-2 15s linear infinite reverse;
 }
 
-@keyframes orbit {
-  0% {
-    transform: translate(50%, 50%) rotate(0deg) translateX(10px) rotate(0deg);
-  }
-  100% {
-    transform: translate(50%, 50%) rotate(360deg) translateX(10px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit-2 {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(10px) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(10px)
-      rotate(-360deg);
-  }
-}
-
 #radiant-animation {
     animation: radiantEffect 4s ease-in-out infinite;
     width: 470px;
@@ -123,6 +133,51 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* animations */
+@keyframes rocket-slide {
+    0% {
+      opacity: 0;
+      transform: translateX(-80vw);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes orbit {
+    0% {
+      transform: translate(50%, 50%) rotate(0deg) translateX(10px) rotate(0deg);
+    }
+    100% {
+      transform: translate(50%, 50%) rotate(360deg) translateX(10px)
+        rotate(-360deg);
+    }
+  }
+  
+  @keyframes orbit-2 {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(10px) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(10px)
+        rotate(-360deg);
+    }
+  }
   
   @keyframes radiantEffect {
     0% {
@@ -135,3 +190,4 @@
       box-shadow: 0 0 20px rgba(255, 204, 0, 0.5), 0 0 30px rgba(255, 204, 0, 0.4), 0 0 40px rgba(255, 204, 0, 0.3);
     }
   }
+

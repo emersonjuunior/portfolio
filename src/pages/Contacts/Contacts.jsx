@@ -5,9 +5,18 @@ const Contacts = () => {
     <section id="contacts">
       <div id="rocket-animation-container">
         <div id="contacts-title-container">
-          <h1>Contacts</h1>
+          <h1 className="section-h1">Contatos</h1>
         </div>
-        <img id="rocket-gif" src="/rocket.gif" alt="Foguete" />
+        <div id="contacts-subtitle-container">
+          <h2>
+            Atualmente estou em busca de <span>novas oportunidades</span>! Ficarei muito
+            feliz em <span>receber seu contato</span>, seja para dúvidas, feedbacks ou até
+            mesmo para conversar :)
+          </h2>
+        </div>
+        <div id="rocket-container">
+          <img id="rocket-gif" src="/rocket.gif" alt="Foguete" />
+        </div>
       </div>
       <div id="solar-system-container">
         <div id="planets-container-1">
@@ -47,7 +56,7 @@ const Contacts = () => {
           <div className="planet planet-4">
             <div className="planet-wrapper-4">
               <img src="/jupiter.png" alt="Jupiter" />
-              
+
               <div className="social-media-container">
                 <i class="fa-regular fa-envelope"></i>
                 <span className="social-media">

@@ -221,12 +221,6 @@
   color: #dfdfdf;
 }
 
-.project-cards-container {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
 .footer-icon:hover {
   color: #e7e3e3;
 }
