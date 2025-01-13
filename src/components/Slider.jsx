@@ -9,11 +9,15 @@ export default function Slider() {
   return (
     <section id="certificates">
       <div id="slider-container">
-        <div id="h2-container">
-          <h2 id="certificates-title">Certificados</h2>
-          <div className="decoration"></div>
+        <div className="section-subtitle-container">
+          <div className="h2-container">
+            <h2 className="section-subtitle">Certificados</h2>
+            <div className="decoration"></div>
+          </div>
+          <h3 className="subtitle">
+            Abaixo estão os meus <span>certificados</span> até o momento :)
+          </h3>
         </div>
-        <h3>Aqui estão os meus certificados até o momento :)</h3>
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
