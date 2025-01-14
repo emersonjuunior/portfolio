@@ -8,47 +8,6 @@
   margin-top: 2em;
 }
 
-.category-button {
-  color: #000;
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 450;
-  transition: all 0.5s ease;
-}
-
-.category-button:hover {
-  letter-spacing: 3px;
-  background: linear-gradient(
-    90deg,
-    rgba(109, 3, 221, 1) 10%,
-    rgba(29, 120, 116, 1) 56%,
-    rgba(29, 120, 116, 1) 90%
-  );
-  color: #fffbfe;
-  box-shadow: rgb(109, 3, 221) 0px 7px 206D03DDpx 0px;
-}
-
-.category-button:active,
-.button-active {
-  letter-spacing: 3px;
-  background: linear-gradient(
-    90deg,
-    rgba(109, 3, 221, 1) 10%,
-    rgba(29, 120, 116, 1) 56%,
-    rgba(29, 120, 116, 1) 90%
-  );
-  color: #fffbfe;
-  transform: translateY(2px);
-  transition: 100ms;
-}
-
 /* project cards */
 .project-cards-container {
   width: 95%;

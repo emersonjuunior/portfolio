@@ -1,0 +1,177 @@
+#home {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: rgb(36, 36, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(36, 36, 36, 0.4) 8%,
+    rgba(38, 38, 38, 0.4) 33%,
+    rgba(41, 41, 41, 0.4) 61%,
+    rgba(53, 53, 53, 0.4) 80%
+  );
+}
+#main-container {
+  flex-basis: 60%;
+
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-container > div {
+  width: 80%;
+}
+
+#main-title-container {
+  width: 85%;
+  margin-bottom: 1.5em;
+}
+
+#greetings {
+  font-size: 20px;
+  color: rgb(235, 232, 232);
+}
+
+#home h1 {
+  font-size: 52px;
+}
+
+#home h1 span {
+  color: #8b22fc;
+}
+
+#home h2 {
+  font-size: 46px;
+  font-weight: 550;
+  color: rgb(224, 219, 219);
+}
+
+#main-description {
+  font-size: 22px;
+  font-weight: 300;
+  color: #e0dfdf;
+}
+
+#main-description p {
+  margin-bottom: 1.5em;
+}
+
+#main-button {
+  background: linear-gradient(
+    90deg,
+    rgba(109, 3, 221, 1) 10%,
+    rgba(29, 120, 116, 1) 56%,
+    rgba(29, 120, 116, 1) 90%
+  );
+  color: #fff;
+  width: 270px;
+  height: 60px;
+}
+
+#decoration-container {
+  width: 40%;
+}
+
+.moon {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.moon svg {
+  animation: rotate 35s linear infinite;
+}
+
+.binary-numbers-1,
+.binary-numbers-2,
+.binary-numbers-3 {
+  position: absolute;
+}
+
+.binary-numbers-1 {
+  right: 55%;
+  top: 6%;
+}
+
+.binary-numbers-2 {
+  bottom: 48%;
+  left: 70px;
+}
+
+.binary-numbers-3 {
+  bottom: 23%;
+  right: 200px;
+}
+
+.binary-1,
+.binary-3,
+.binary-5 {
+  margin-bottom: 0.4em;
+}
+
+#decoration-container span {
+  display: inline-block;
+  font-size: 44px;
+  font-family: "Roboto";
+  margin-right: 8px;
+  z-index: 2;
+  background: linear-gradient(360deg, rgb(226, 224, 224), rgb(127, 127, 133));
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: levitate-1 3s ease-in-out infinite;
+}
+
+.b3, .b5, .b7, .b8, .b10, .b14, .b16{
+    animation: levitate-2 5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes levitate-1 {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-10px); /* Mover um pouco para cima */
+  }
+  100% {
+    transform: translateY(0); /* Voltar para a posição original */
+  }
+}
+
+@keyframes levitate-2 {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-5px); /* Mover um pouco para cima */
+  }
+  100% {
+    transform: translateY(0); /* Voltar para a posição original */
+  }
+}
+
+@keyframes levitate-3 {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-14px); /* Mover um pouco para cima */
+  }
+  100% {
+    transform: translateY(0); /* Voltar para a posição original */
+  }
+}

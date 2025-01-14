@@ -26,8 +26,8 @@ const Projects = () => {
         <button
           className={
             activeButton === "1"
-              ? "button-active category-button"
-              : "category-button"
+              ? "button-active primary-button"
+              : "primary-button"
           }
           onClick={() => {
             changeCategory("Todos");
@@ -39,8 +39,8 @@ const Projects = () => {
         <button
           className={
             activeButton === "2"
-              ? "button-active category-button"
-              : "category-button"
+              ? "button-active primary-button"
+              : "primary-button"
           }
           onClick={() => {
             changeCategory("Fullstack");
@@ -52,8 +52,8 @@ const Projects = () => {
         <button
           className={
             activeButton === "3"
-              ? "button-active category-button"
-              : "category-button"
+              ? "button-active primary-button"
+              : "primary-button"
           }
           onClick={() => {
             changeCategory("Landing Page");
@@ -65,8 +65,8 @@ const Projects = () => {
         <button
           className={
             activeButton === "4"
-              ? "button-active category-button"
-              : "category-button"
+              ? "button-active primary-button"
+              : "primary-button"
           }
           onClick={() => {
             changeCategory("Jogos");

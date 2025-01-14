@@ -15,8 +15,8 @@ const Languages = () => {
         </h3>
       </div>
       <div id="languages-container">
-        {languages.map((language) => (
-          <div className="languages-card">
+        {languages.map((language, index) => (
+          <div key={index} className="languages-card">
             <div className="bg"></div>
             <div className="card-icon-wrapper">
               <i className={language.icon}></i>
