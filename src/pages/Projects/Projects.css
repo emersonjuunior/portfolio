@@ -10,7 +10,7 @@
 
 /* project cards */
 .project-cards-container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto 3em auto;
   height: 100%;
   display: flex;
@@ -196,34 +196,5 @@
   transform: translateX(0);
 }
 
-#project-footer-1 {
-  position: absolute;
-  bottom: 0;
-  left: 1.5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.vertical-line {
-  width: 1px;
-  height: 150px;
-  background-color: #808080;
-  margin-top: 0.5em;
-}
 
-.footer-icon {
-  color: #afaeae;
-  font-size: 22px;
-}
-
-#project-footer-2 {
-  position: absolute;
-  bottom: 12px;
-}
-
-#project-footer-2 p {
-  color: rgb(219, 213, 213)
-}

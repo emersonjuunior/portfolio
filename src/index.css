@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat";
-  color: #FFFBFE;
+  color: #fffbfe;
 }
 
 body {
   max-width: 100vw;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -79,9 +79,12 @@ h3 {
   font-weight: 500;
 }
 
-#certificates span, #languages span, #contacts h2 span {
-    color: #30C5BE;
-    font-weight: 600;
+#certificates span,
+#languages span,
+#contacts h2 span,
+#home p span {
+  color: #30c5be;
+  font-weight: 600;
 }
 
 section {
@@ -125,7 +128,7 @@ a {
     rgba(29, 120, 116, 1) 90%
   );
   color: #fffbfe;
-  box-shadow: 0 0 20px rgba(5, 169, 180, 0.5)
+  box-shadow: 0 0 20px rgba(5, 169, 180, 0.5);
 }
 
 .primary-button:active,

@@ -11,6 +11,7 @@ import Contacts from "./pages/Contacts/Contacts.jsx";
 // components
 import Header from "./components/Header.jsx";
 import StarsParticles from "./components/StarParticles.jsx";
+import SocialFooter from "./components/SocialFooter.jsx";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
         <StarsParticles id="particles" />
         <Header />
+        <SocialFooter/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
