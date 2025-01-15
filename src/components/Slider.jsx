@@ -18,34 +18,39 @@ export default function Slider() {
             Abaixo estão os meus <span>certificados</span> até o momento :)
           </h3>
         </div>
-        <Swiper
-          modules={[Navigation, Pagination]}
-          navigation
-          pagination={{ clickable: true }}
-          spaceBetween={50}
-          slidesPerView={1}
-        >
-          <SwiperSlide>
-            <div className="certificates-container">
-              <div>
-                <img src="/javascript.jpg" alt="Certificado JavaScript" />
+        <div className="certificates-container">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            navigation
+            pagination={{ clickable: true }}
+            spaceBetween={10} // Espaço entre os slides
+            slidesPerView={2} // Exibe o slide central e parte dos dois próximos slides
+            centeredSlides={true} // Centraliza o slide ativo
+            loop={true} // Loop para os slides
+            grabCursor={true} // Cursor de "arrastar" no mouse
+          >
+            <SwiperSlide>
+              <div className="img-wrapper">
+                <img src="/javascript.jpg" alt="Image 1" />
               </div>
-              <div>
-                <img src="/inovacao.jpg" alt="Certificado Inovação PUC" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="img-wrapper">
+                <img src="/inovacao.jpg" alt="Image 2" />
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="certificates-container">
-              <div>
-                <img src="/git.jpg" alt="Certificado Git" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="img-wrapper">
+                <img src="/git.jpg" alt="Image 3" />
               </div>
-              <div>
-                <img src="/css.jpg" alt="Certificado Git" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="img-wrapper">
+                <img src="/css.jpg" alt="Image 4" />
               </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import "./Skills.css";
 import Languages from "../../components/Languages";
 import Slider from "../../components/Slider";
 

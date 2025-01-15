@@ -2,6 +2,10 @@
   margin-bottom: 3.5em;
 }
 
+#languages .subtitle {
+  margin: 1.6em auto 2.4em auto;
+}
+
 #languages-container {
   width: 80%;
   margin: 0 auto;
@@ -130,3 +134,4 @@
     visibility: visible;
   }
 }
+

@@ -3,17 +3,12 @@ import { languages } from "../data/languages";
 
 const Languages = () => {
   return (
-    <section id="languages">
-      <div className="section-subtitle-container">
-        <div className="h2-container">
-          <h2 className="section-subtitle">Tecnologias</h2>
-          <div className="decoration"></div>
-        </div>
+    <div id="languages">
         <h3 className="subtitle">
           Aqui estão algumas <span>tecnologias</span> que utilizo durante o{" "}
           <span>desenvolvimento</span> de aplicações:
         </h3>
-      </div>
+      
       <div id="languages-container">
         {languages.map((language, index) => (
           <div key={index} className="languages-card">
@@ -33,7 +28,7 @@ const Languages = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
