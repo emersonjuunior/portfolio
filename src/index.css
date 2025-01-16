@@ -139,3 +139,15 @@ a {
   transform: translateY(2px);
   transition: 100ms;
 }
+
+#main-button, #about-button {
+  background: linear-gradient(
+    90deg,
+    rgba(109, 3, 221, 1) 10%,
+    rgba(29, 120, 116, 1) 56%,
+    rgba(29, 120, 116, 1) 90%
+  );
+  color: #fff;
+  width: 270px;
+  height: 60px;
+}

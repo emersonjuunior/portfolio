@@ -60,18 +60,6 @@
   margin-bottom: 1.5em;
 }
 
-#main-button {
-  background: linear-gradient(
-    90deg,
-    rgba(109, 3, 221, 1) 10%,
-    rgba(29, 120, 116, 1) 56%,
-    rgba(29, 120, 116, 1) 90%
-  );
-  color: #fff;
-  width: 270px;
-  height: 60px;
-}
-
 #decoration-container {
   flex-basis: 45%;
 }
@@ -127,7 +115,7 @@
 }
 
 .binary-numbers-3 {
-  bottom: 30px;
+  bottom: 35px;
   left: 2%;
 }
 

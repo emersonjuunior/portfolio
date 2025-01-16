@@ -58,7 +58,7 @@ const Contacts = () => {
               <img src="/jupiter.png" alt="Jupiter" />
 
               <div className="social-media-container">
-                <i class="fa-regular fa-envelope"></i>
+                <i className="fa-regular fa-envelope"></i>
                 <span className="social-media">
                   emerson.c.junior.115@gmail.com
                 </span>
