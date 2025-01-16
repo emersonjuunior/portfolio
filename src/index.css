@@ -21,7 +21,7 @@ body {
 }
 
 .section-h1 {
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
   letter-spacing: 8px;
 }
@@ -148,6 +148,11 @@ a {
     rgba(29, 120, 116, 1) 90%
   );
   color: #fff;
-  width: 270px;
-  height: 60px;
+  width: 300px;
+  height: 65px;
+}
+
+.download {
+  font-size: 20px;
+  margin-right: 5px;
 }

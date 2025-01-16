@@ -1,6 +1,10 @@
 import "./About.css";
+import { useTypeAnimation } from "../../hooks/useTypeAnimation";
+import NextButton from "../../components/NextButton";
 
 const About = () => {
+  const text = useTypeAnimation("obre");
+
   return (
     <section id="about">
       <div id="about-container">
@@ -12,7 +16,7 @@ const About = () => {
       </div>
       <div id="about-description">
         <div id="about-h1-container">
-          <h1 className="section-h1">Sobre</h1>
+          <h1 className="section-h1">S{text}</h1>
         </div>
         <div id="about-text">
           <p className="about-p">
@@ -23,11 +27,12 @@ const About = () => {
             já existentes continua me motivando até hoje.
           </p>
           <p className="about-p">
-            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na
-            PUC Minas. Meu foco está no desenvolvimento front-end, criando
-            componentes reutilizáveis e interfaces intuitivas e responsivas.
-            Também possuo experiência em integração de APIs, metodologias ágeis
-            (SCRUM), além de conhecimentos em banco de dados.
+            <span className="first-letter">A</span>tualmente, estou cursando
+            Análise e Desenvolvimento de Sistemas na PUC Minas. Meu foco está no
+            desenvolvimento front-end, criando componentes reutilizáveis e
+            interfaces intuitivas e responsivas. Também possuo experiência em
+            integração de APIs, metodologias ágeis (SCRUM), além de
+            conhecimentos em banco de dados.
           </p>
           <p className="about-p" id="p-3">
             <span className="first-letter">M</span>eu objetivo é estar sempre em
@@ -35,9 +40,13 @@ const About = () => {
             que possuo, para o desenvolvimento e eficiência de sistemas de
             qualidade e para uma melhor experiência do usuário.
           </p>
-          <button className="primary-button" id="about-button">
-            Baixar Resumo
-          </button>
+          <div id="about-btn-container">
+            <button className="primary-button" id="about-button">
+              <i className="download fa-solid fa-file-arrow-down"></i> Baixar
+              Resumo
+            </button>
+            <NextButton name={"Habilidades"} link={"/skills"} />
+          </div>
         </div>
       </div>
     </section>

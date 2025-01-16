@@ -1,0 +1,51 @@
+#next-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#next-button {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #dbdddd;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 225px;
+  height: 52px;
+}
+
+#next-button i,
+#next-button {
+  color: #181717;
+}
+
+#next-button:hover {
+  background: #c6c9c9;
+}
+
+#next-button > i {
+  font-size: 18px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#next-button:hover i {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#skills #next-button, #projects #next-button {
+  margin-bottom: 4em;
+  width: 280px;
+  height: 65px;
+  font-size: 20px;
+}

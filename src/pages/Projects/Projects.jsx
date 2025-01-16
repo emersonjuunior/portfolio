@@ -1,12 +1,15 @@
 import "./Projects.css";
+import NextButton from "../../components/NextButton";
 import { useState, useEffect } from "react";
 import { projects } from "../../data/projects";
 import { useFilterTechnologies } from "../../hooks/useFilterTechnologies";
+import { useTypeAnimation } from "../../hooks/useTypeAnimation";
 
 const Projects = () => {
   const [category, setCategory] = useState("Todos");
   const [activeButton, setActiveButton] = useState("1");
   const [isVisible, setIsVisible] = useState(true);
+  const text = useTypeAnimation("rojetos")
 
   const changeCategory = (value) => {
     setIsVisible(false);
@@ -20,7 +23,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="section-title">
-        <h1 className="section-h1">Projetos</h1>
+        <h1 className="section-h1">P{text}</h1>
       </div>
       <div id="category-buttons-container">
         <button
@@ -135,6 +138,7 @@ const Projects = () => {
           );
         })}
       </div>
+      <NextButton name={"Contatos"} link={"/contacts"} />
     </section>
   );
 };
