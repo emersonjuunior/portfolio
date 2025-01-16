@@ -3,7 +3,7 @@ import { useTypeAnimation } from "../../hooks/useTypeAnimation";
 import NextButton from "../../components/NextButton";
 
 const About = () => {
-  const text = useTypeAnimation("obre");
+  const text = useTypeAnimation("obre", "350");
 
   return (
     <section id="about">

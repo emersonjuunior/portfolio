@@ -9,7 +9,7 @@ const Projects = () => {
   const [category, setCategory] = useState("Todos");
   const [activeButton, setActiveButton] = useState("1");
   const [isVisible, setIsVisible] = useState(true);
-  const text = useTypeAnimation("rojetos")
+  const text = useTypeAnimation("rojetos", "250")
 
   const changeCategory = (value) => {
     setIsVisible(false);

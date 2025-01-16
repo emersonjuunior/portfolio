@@ -44,7 +44,7 @@ body {
   font-size: 50px;
   position: relative;
   letter-spacing: 3px;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .h2-container {
@@ -140,7 +140,8 @@ a {
   transition: 100ms;
 }
 
-#main-button, #about-button {
+#main-button,
+#about-button {
   background: linear-gradient(
     90deg,
     rgba(109, 3, 221, 1) 10%,
@@ -155,4 +156,33 @@ a {
 .download {
   font-size: 20px;
   margin-right: 5px;
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moon-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes transition-down-slow {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

@@ -29,10 +29,10 @@ header {
   font-weight: 300;
 }
 
-#logo span {
+.header-span {
   color: #8b22fc;
   font-weight: 800;
-  padding-right: 2px;
+  padding-right: 3px;
   display: inline-block;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -84,17 +84,33 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* logo shake animation */
-#logo:hover span {
-  animation: shakeAnimation 0.3s ease-in-out;
+/* navbar animation */
+#nav-1 {
+  animation: transition-down .8s ease-in-out forwards;
 }
 
-@keyframes shakeAnimation {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-2px) rotate(-2deg); }
-  50% { transform: translateX(2px) rotate(2deg); }
-  75% { transform: translateX(-2px) rotate(-2deg); }
-  100% { transform: translateX(0); }
+#nav-2 {
+  animation: transition-down 1.2s ease-in-out forwards;
+}
+
+#nav-3 {
+  animation: transition-down 1.6s ease-in-out forwards;
+}
+
+#nav-4 {
+  animation: transition-down 2s ease-in-out forwards;
+}
+
+#nav-5 {
+  animation: transition-down 2.4s ease-in-out forwards;
+}
+
+#nav-logo > p {
+  animation: transition-down .8s ease-in-out forwards;
+}
+
+#logo:hover span {
+  animation: shakeAnimation 0.3s ease-in-out;
 }
 
 /* smaller desktops */
@@ -150,5 +166,24 @@ nav a:hover::after {
 @media (max-height: 700px){
   #logo {
     font-size: 20px;
+  }
+}
+
+/* animations */
+@keyframes shakeAnimation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(-2deg); }
+  50% { transform: translateX(2px) rotate(2deg); }
+  75% { transform: translateX(-2px) rotate(-2deg); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes transition-down {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

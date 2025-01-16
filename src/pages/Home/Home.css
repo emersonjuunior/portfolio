@@ -20,6 +20,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  animation: transition-down-slow 3s ease forwards;
 }
 
 #main-container > div {
@@ -75,7 +77,8 @@
   margin: 0 auto;
   width: 550px;
   height: 550px;
-  opacity: 0.9;
+  opacity: 0;
+  animation: moon-animation 1.2s ease .2s forwards;
 }
 
 #rocket-animation {
@@ -86,6 +89,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  opacity: 0;
+  animation: opacity-animation .6s ease-out 1s forwards;
 }
 
 .binary-numbers-1,
@@ -107,16 +112,22 @@
 .binary-numbers-1 {
   top: 25px;
   left: 15%;
+  opacity: 0;
+  animation: opacity-animation .6s ease-out 1.6s forwards;
 }
 
 .binary-numbers-2 {
   top: 50%;
   right: 10px;
+  opacity: 0;
+  animation: opacity-animation .6s ease-out 2s forwards;
 }
 
 .binary-numbers-3 {
   bottom: 35px;
   left: 2%;
+  opacity: 0;
+  animation: opacity-animation .6s ease-out 2.4s forwards;
 }
 
 .binary-1,

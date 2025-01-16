@@ -5,6 +5,7 @@ import Menu from "./Menu.jsx";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [navAnimation, setNavAnimation] = useState("1")
   const toggleMenu = () => {
     setMenu((prev) => !prev);
   };
@@ -21,31 +22,39 @@ const Header = () => {
     });
   }
 
+  // navbar animation
+  useEffect(() => {
+    setTimeout(() => {
+      setNavAnimation(navAnimation + 1)
+    }, 300)
+  }, [])
+
+
   return (
     <>
       <header>
         <div id="logo">
-          <Link to="/">
+          <Link to="/" id="navlogo">
             <p>
-              <span>&lt;</span>emerson jr <span>/&gt;</span>
+              <span className="header-span">&lt;</span>emerson jr <span className="header-span">/&gt;</span>
             </p>
           </Link>
         </div>
         <nav>
           <ul>
-            <NavLink to="/">
+            <NavLink to="/"  id="nav-1">
               <li>Home</li>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/about" id="nav-2" >
               <li>Sobre</li>
             </NavLink>
-            <NavLink to="/skills">
+            <NavLink to="/skills" id="nav-3">
               <li>Habilidades</li>
             </NavLink>
-            <NavLink to="projects">
+            <NavLink to="projects" id="nav-4">
               <li>Projetos</li>
             </NavLink>
-            <NavLink to="/contacts">
+            <NavLink to="/contacts" id="nav-5">
               <li>Contatos</li>
             </NavLink>
           </ul>
