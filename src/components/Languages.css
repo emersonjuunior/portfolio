@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  animation: transition-up-slow 2s ease forwards;
 }
 
 .languages-card {

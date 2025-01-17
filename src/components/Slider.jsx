@@ -4,10 +4,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
+import {motion} from "framer-motion"
 
 export default function Slider() {
   return (
     <section id="certificates">
+      <motion.div 
+      initial={{opacity: .5, x: -70}}
+      whileInView={{opacity: 1, x: 0}}
+      transition={{duration: 1}}
+      viewport={{once: true}}
+      >
       <div id="slider-container">
         <div className="section-subtitle-container">
           <div className="h2-container">
@@ -52,6 +59,7 @@ export default function Slider() {
           </Swiper>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 }

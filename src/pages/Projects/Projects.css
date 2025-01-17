@@ -21,6 +21,7 @@
   border: 2px solid #302f2f;
   padding: 50px;
   border-radius: 10px;
+  animation: transition-right-slow 1.5s ease forwards;
 }
 
 .project-card {

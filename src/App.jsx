@@ -12,14 +12,17 @@ import Contacts from "./pages/Contacts/Contacts.jsx";
 import Header from "./components/Header.jsx";
 import StarsParticles from "./components/StarParticles.jsx";
 import SocialFooter from "./components/SocialFooter.jsx";
+import Scroll from "./components/Scroll.jsx";
 
 function App() {
+
   return (
     <>
       <BrowserRouter>
         <StarsParticles id="particles" />
         <Header />
         <SocialFooter/>
+        <Scroll/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

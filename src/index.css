@@ -11,6 +11,7 @@
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .section-title {
@@ -178,8 +179,30 @@ a {
 
 @keyframes transition-down-slow {
   0% {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
     opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes transition-up-slow {
+  0% {
+    transform: translateY(25px);
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes transition-right-slow {
+  0% {
+    transform: translateX(-35px);
+    opacity: .5;
   }
   100% {
     transform: translateY(0);
