@@ -8,6 +8,7 @@
     flex-direction: column;
     gap: 20px;
     z-index: 10;
+    animation: transition-down-slow 3s ease forwards;
   }
   
   .vertical-line {

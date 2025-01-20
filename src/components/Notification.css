@@ -1,0 +1,86 @@
+/* COMMON STYLES*/
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 70px;
+  box-shadow: 4px 4px 10px -10px rgba(0, 0, 0, 1);
+  width: 350px;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  border-radius: 4px;
+  padding: 5px 0;
+  font-weight: 300;
+  transform: translateX(-100px);
+  animation: show-notification .6s ease forwards, close-notification .6s ease 3s forwards;
+}
+.popup svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.popup-icon svg {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.close-icon {
+  margin-left: auto;
+}
+.close-svg {
+  cursor: pointer;
+}
+.close-path {
+  fill: grey;
+}
+
+/*SEPERATE STYLES*/
+
+/* SUCCESS */
+.success-popup {
+  background-color: #edfbd8;
+  border: solid 1px #84d65a;
+}
+.success-icon path {
+  fill: #84d65a;
+}
+.success-message {
+  color: #2b641e;
+}
+
+.timer-animation {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background-color: rgb(5, 221, 52);
+  transform-origin: left;
+  animation: timer-animation 3s ease forwards;
+}
+
+@keyframes show-notification {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close-notification {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-700px);
+  } 
+}
+
+@keyframes timer-animation {
+0% {
+  width: 100%;
+}
+100% {
+  width: 0;
+}
+}
