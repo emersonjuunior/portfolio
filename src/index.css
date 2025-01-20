@@ -179,6 +179,22 @@ a {
   font-size: 20px;
 }
 
+/* smaller desktops */
+@media (max-width: 1450px){
+}
+
+/* tablets */
+@media (max-width: 1024px){
+}
+
+/* smartphones */
+@media (max-width: 768px){
+  .section-h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+}
+
 @keyframes opacity-animation {
   0% {
     opacity: 0;

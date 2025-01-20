@@ -25,7 +25,7 @@ const Contacts = () => {
       setNotification(true);
       setTimeout(() => {
         setNotification(false);
-      }, 4000);
+      }, 5000);
     }
   };
 

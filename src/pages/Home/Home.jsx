@@ -17,7 +17,8 @@ const Home = () => {
           <p id="greetings">olá, o meu nome é</p>
           <h2>Emerson Junior</h2>
           <h1>
-            Desenvolvedor <span>{text}</span>
+            <span id="home-span">Desenvolvedor</span>{" "}
+            <span id="type">{text}</span>
             <Cursor />
           </h1>
         </div>
@@ -27,9 +28,11 @@ const Home = () => {
             back-end) apaixonado na construção de experiências digitais.
             Atualmente, busco <span>novas oportunidades</span>.
           </p>
-          <button className="primary-button" id="main-button">
-            Ver portfolio
-          </button>
+          <div id="home-button-container">
+            <button className="primary-button" id="main-button">
+              Ver portfolio
+            </button>
+          </div>
         </div>
       </div>
       <div id="decoration-container">
