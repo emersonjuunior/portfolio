@@ -2,33 +2,17 @@ import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Header.css";
 import Menu from "./Menu.jsx";
+import BurgerMenu from "./BurgerMenu.jsx";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-  const [navAnimation, setNavAnimation] = useState("1")
   const toggleMenu = () => {
-    setMenu((prev) => !prev);
+    setMenu(prev => !prev);
   };
 
-  const body = document.querySelector("body");
-  const menuBurger = document.querySelector("menu");
-  if (menuBurger) {
-    body.addEventListener("click", (e) => {
-      if (menuBurger.contains(e.target)) {
-        return;
-      } else {
-        setMenu(false);
-      }
-    });
+  const closeMenu = () => {
+    setMenu(false)
   }
-
-  // navbar animation
-  useEffect(() => {
-    setTimeout(() => {
-      setNavAnimation(navAnimation + 1)
-    }, 300)
-  }, [])
-
 
   return (
     <>
@@ -40,7 +24,7 @@ const Header = () => {
             </p>
           </Link>
         </div>
-        <nav>
+        <nav id="nav-desktop">
           <ul>
             <NavLink to="/"  id="nav-1">
               <li>Home</li>
@@ -59,12 +43,11 @@ const Header = () => {
             </NavLink>
           </ul>
         </nav>
-
         <menu>
-          <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
+          <BurgerMenu toggleMenu={toggleMenu} menu={menu}/>
         </menu>
       </header>
-      {menu && <Menu />}
+       {menu && <Menu closeMenu={closeMenu}/>}
     </>
   );
 };

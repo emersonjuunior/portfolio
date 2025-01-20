@@ -23,8 +23,6 @@ header {
   width: 40%;
   font-size: 20px;
   padding-left: 3em;
-  display: flex;
-  align-items: center;
   justify-content: center;
   font-weight: 300;
 }
@@ -55,9 +53,6 @@ nav ul {
 
 menu {
   display: none;
-  font-size: 32px;
-  padding: 20px;
-  cursor: pointer;
 }
 
 /* navbar animation */
@@ -114,58 +109,43 @@ nav a:hover::after {
 }
 
 /* smaller desktops */
-@media (max-width: 1200px) {
-  #logo {
-    padding: 0 1.5em;
-    width: 20%;
-    font-size: 22px;
-  }
-
-  nav {
-    width: 60%;
-  }
-
-  nav ul {
-    gap: 15px;
-    font-size: 16px;
-  }
-
-  #contact-button-container {
-    width: 20%;
-    justify-content: center;
-  }
-
-  #contact-button {
-    margin: 0;
-    width: 95%;
+@media (max-width: 1450px){
+  #nav-desktop {
+    width: 65%;
   }
 }
 
-/* tablets and smartphones - menu burger */
-@media (max-width: 1024px) {
+/* tablets */
+@media (max-width: 1024px){
+#logo {
+  width: 300px;
+  padding-left: 1em;
+  justify-content: start;
+}
+
+#nav-desktop {
+  width: 80%;
+}
+
+#nav-desktop ul {
+  gap: 15px;
+  justify-content: end;
+}
+}
+
+/* smartphones */
+@media (max-width: 768px){
   #logo {
-    width: 50%;
-    font-size: 24px;
+    padding-left: .5em;
+  }
+
+  #nav-desktop {
+    display: none;
   }
 
   menu {
     display: block;
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  nav,
-  #contact-button-container {
-    display: none;
-  }
-}
-
-/* smaller height */
-@media (max-height: 700px){
-  #logo {
-    font-size: 20px;
+    padding-right: .5em;
   }
 }
 

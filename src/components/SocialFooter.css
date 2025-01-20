@@ -22,3 +22,10 @@
     color: #afaeae;
     font-size: 22px;
   }
+
+/* smartphones */
+@media (max-width: 768px){
+  #social-footer {
+    display: none;
+  }
+}
