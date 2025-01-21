@@ -1,6 +1,6 @@
 import "./Notification.css"
 
-const Notification = ({closeNotification}) => {
+const Notification = ({closeNotification, msg}) => {
   return (
     <div className="popup-container">
   <div className="popup success-popup">
@@ -17,7 +17,7 @@ const Notification = ({closeNotification}) => {
         ></path>
       </svg>
     </div>
-    <div className="success-message">Obrigado pelo like :)</div>
+    <div className="success-message">{msg}</div>
     <div className="popup-icon close-icon">
       <svg
       onClick={closeNotification}

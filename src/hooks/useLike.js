@@ -14,7 +14,6 @@ export const useLike = () => {
       });
 
       setLikes(data)
-      console.log("Add: " + likes);
     } catch (error) {
         setError("Algo deu errado, tente novamente mais tarde.");
     }
@@ -28,7 +27,6 @@ export const useLike = () => {
       });
 
       setLikes(data)
-      console.log("Remove: " + likes);
     } catch (error) {
       setError("Algo deu errado, tente novamente mais tarde.");
     }
@@ -39,7 +37,6 @@ export const useLike = () => {
       const docRef = doc(db, "likes", col);
       const response = await getDoc(docRef);
       setLikes(response.data().likes);
-      console.log("Get: " + likes);
     } catch (error) {
       setLikes("...");
     }

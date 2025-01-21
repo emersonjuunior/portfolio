@@ -7,6 +7,7 @@ const Contacts = () => {
   const { addLike, removeLike, getLike, likes, error } = useLike();
   const [activeLike, setActiveLike] = useState(false);
   const [notification, setNotification] = useState(false);
+  const [copyNotification, setCopyNotification] = useState(false)
 
   const closeNotification = () => {
     setNotification(false);
@@ -27,6 +28,14 @@ const Contacts = () => {
         setNotification(false);
       }, 5000);
     }
+  };
+
+  const handleCopy = () => {
+    const textToCopy = "emerson.c.junior.115@gmail.com";
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      setCopyNotification(true)
+    });
   };
 
   return (
@@ -64,22 +73,29 @@ const Contacts = () => {
       <div id="solar-system-container">
         <div id="planets-container-1">
           <div className="planet planet-1">
-            <div className="planet-wrapper planet-wrapper-1">
-              <img src="/mercury.png" alt="Mercúrio" className="planet-img" />
-              <div className="social-media-container">
-                <i className="footer-icon acess-icon fa-brands fa-github"></i>
-                <span className="social-media">@emersonjuunior</span>
+            <a href="https://github.com/emersonjuunior" target="_blank">
+              <div className="planet-wrapper planet-wrapper-1">
+                <img src="/mercury.png" alt="Mercúrio" className="planet-img" />
+                <div className="social-media-container">
+                  <i className="footer-icon acess-icon fa-brands fa-github"></i>
+                  <span className="social-media">@emersonjuunior</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className="planet planet-2">
-            <div className="planet-wrapper planet-wrapper-2">
-              <img src="/earth.png" alt="Terra" className="planet-img" />
-              <div className="social-media-container">
-                <i className="footer-icon acess-icon fa-brands fa-linkedin"></i>
-                <span className="social-media">Emerson Junior</span>
+            <a
+              href="https://www.linkedin.com/in/emerson-junior-102277280/"
+              target="_blank"
+            >
+              <div className="planet-wrapper planet-wrapper-2">
+                <img src="/earth.png" alt="Terra" className="planet-img" />
+                <div className="social-media-container">
+                  <i className="footer-icon acess-icon fa-brands fa-linkedin"></i>
+                  <span className="social-media">Emerson Junior</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div id="sun-container">
@@ -88,18 +104,25 @@ const Contacts = () => {
         </div>
         <div id="planets-container-2">
           <div className="planet planet-3">
-            <div className="planet-wrapper planet-wrapper-3">
-              <img src="/saturn.png" alt="Saturno" className="planet-img" />
-              <div className="social-media-container">
-                <i className="footer-icon acess-icon fa-brands fa-whatsapp"></i>
-                <span className="social-media">(33) 99850-7083</span>
+            <a
+              href="https://api.whatsapp.com/send/?phone=553398507083&text&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              <div className="planet-wrapper planet-wrapper-3">
+                <img src="/saturn.png" alt="Saturno" className="planet-img" />
+                <div className="social-media-container">
+                  <i className="footer-icon acess-icon fa-brands fa-whatsapp"></i>
+                  <span className="social-media">(33) 99850-7083</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div className="planet planet-4">
-            <div className="planet-wrapper planet-wrapper-4">
+            <div
+              className="planet-wrapper planet-wrapper-4"
+              onClick={handleCopy}
+            >
               <img src="/jupiter.png" alt="Jupiter" className="planet-img" />
-
               <div className="social-media-container">
                 <i className="fa-regular fa-envelope"></i>
                 <span className="social-media">
@@ -110,7 +133,18 @@ const Contacts = () => {
           </div>
         </div>
       </div>
-      {notification && <Notification closeNotification={closeNotification} />}
+      {notification && (
+        <Notification
+          msg={"Obrigado pelo like :)"}
+          closeNotification={closeNotification}
+        />
+      )}
+      {copyNotification && (
+        <Notification
+          msg={"Email copiado!"}
+          closeNotification={closeNotification}
+        />
+      )}
     </section>
   );
 };

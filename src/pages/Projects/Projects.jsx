@@ -17,7 +17,6 @@ const Projects = () => {
     setTimeout(() => {
       setCategory(value);
       setIsVisible(true);
-      console.log(isVisible);
     }, 600);
   };
 
@@ -94,7 +93,7 @@ const Projects = () => {
               <div className="project-image-container">
                 <div
                   className="project-image-background"
-                  style={{ backgroundImage: `url(${projects[0].image})` }}
+                  style={{ backgroundImage: `url(${project.image})` }}
                 ></div>
                 <button className="project-button">Acessar</button>
               </div>
@@ -104,8 +103,15 @@ const Projects = () => {
                     <h3>{project.name}</h3>
                   </div>
                   <div className="acess-icons-container">
-                    <i className="acess-icon fa-brands fa-github"></i>
-                    <i className="acess-icon fa-solid fa-up-right-from-square"></i>
+                    <a
+                      href={`https://github.com/emersonjuunior/${project.github}`}
+                      target="_blank"
+                    >
+                      <i className="acess-icon fa-brands fa-github"></i>
+                    </a>
+                    <a href={project.deploy} target="_blank">
+                      <i className="acess-icon fa-solid fa-up-right-from-square"></i>
+                    </a>
                   </div>
                 </div>
                 <div className="project-description">{project.description}</div>
