@@ -36,6 +36,8 @@
 .swiper {
   width: 80% !important;
   height: 600px !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
 }
 
 #certificates-container,
