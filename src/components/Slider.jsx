@@ -31,30 +31,42 @@ export default function Slider() {
                 modules={[Navigation, Pagination]}
                 navigation
                 pagination={{ clickable: true }}
-                spaceBetween={10} // Espaço entre os slides
-                slidesPerView={2} // Exibe o slide central e parte dos dois próximos slides
-                centeredSlides={true} // Centraliza o slide ativo
-                loop={true} // Loop para os slides
-                grabCursor={true} // Cursor de "arrastar" no mouse
+                slidesPerView={2} 
+                centeredSlides={true} 
+                loop={true} 
+                grabCursor={true} 
+                breakpoints={{
+                  300: {
+                    spaceBetween: 100,
+                  },
+                  767: {
+                    spaceBetween: 20
+                  }
+                }}
               >
                 <SwiperSlide>
                   <div className="img-wrapper">
-                    <img src="/javascript.jpg" alt="Image 1" />
+                    <img src="/react.jpg" alt="Certificado React" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="img-wrapper">
-                    <img src="/inovacao.jpg" alt="Image 2" />
+                    <img src="/javascript.jpg" alt="Certificado JavaScript" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="img-wrapper">
-                    <img src="/git.jpg" alt="Image 3" />
+                    <img src="/inovacao.jpg" alt="Certificado Inovação PUC Minas" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="img-wrapper">
-                    <img src="/css.jpg" alt="Image 4" />
+                    <img src="/git.jpg" alt="Certificado Git e GitHub" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="img-wrapper">
+                    <img src="/css.jpg" alt="Certificado CSS" />
                   </div>
                 </SwiperSlide>
               </Swiper>
