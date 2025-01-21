@@ -34,8 +34,6 @@
   fill: grey;
 }
 
-/*SEPERATE STYLES*/
-
 /* SUCCESS */
 .success-popup {
   background-color: #edfbd8;
@@ -56,6 +54,14 @@
   background-color: rgb(5, 221, 52);
   transform-origin: left;
   animation: timer-animation 3s ease forwards;
+}
+
+/* smartphones */
+@media (max-width: 768px){
+  .popup {
+    left: 10px;
+    width: 280px;
+  }
 }
 
 @keyframes show-notification {

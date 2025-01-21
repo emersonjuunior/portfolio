@@ -1,5 +1,7 @@
 #rocket-gif {
   rotate: 90deg;
+  height: 150px;
+  width: 150px;
 }
 
 #rocket-animation-container {
@@ -16,13 +18,7 @@
   margin: 0 auto 1em auto;
 }
 
-#contacts-subtitle-container {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#contacts h2 {
+#contacts h3 {
   font-weight: 450;
 }
 
@@ -31,6 +27,7 @@
   height: 150px;
   display: flex;
   justify-content: end;
+  align-items: center;
   padding-right: 15%;
 }
 
@@ -44,6 +41,11 @@
 
 #like-portfolio-btn:hover {
   letter-spacing: 2px;
+}
+
+.like-heart {
+  font-size: 20px;
+  margin: 0 3px 0 8px;
 }
 
 /* solar system */
@@ -153,6 +155,106 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* smaller desktops */
+@media (max-width: 1450px) {
+  .planet-1,
+  .planet-2 {
+    margin-right: 150px;
+  }
+
+  .planet-3,
+  .planet-4 {
+    margin-left: 150px;
+  }
+}
+
+/* tablets */
+@media (max-width: 1024px) {
+  #rocket-gif {
+    width: 120px;
+    height: 120px;
+  }
+
+  #rocket-container {
+    padding-right: 10%;
+  }
+
+  #sun-img {
+    width: 400px;
+    height: 400px;
+  }
+
+  #radiant-animation {
+    width: 370px;
+    height: 370px;
+  }
+
+  .planet img {
+    width: 225px;
+    height: 225px;
+  }
+
+  .social-media-container span {
+    font-size: 13px;
+  }
+}
+
+/* smartphones */
+@media (max-width: 768px) {
+  #rocket-gif {
+    width: 70px;
+    height: 70px;
+  }
+
+  #rocket-container {
+    padding-right: 1%;
+  }
+
+  #like-portfolio-btn {
+    width: 310px;
+    font-size: 14px;
+    height: 60px;
+  }
+
+  #sun-img {
+    width: 270px;
+    height: 270px;
+  }
+
+  #radiant-animation {
+    width: 250px;
+    height: 250px;
+  }
+
+  .planet img {
+    width: 175px;
+    height: 175px;
+  }
+
+  .planet-1,
+  .planet-2 {
+    margin-right: 50px;
+  }
+
+  .planet-3,
+  .planet-4 {
+    margin-left: 50px;
+  }
+
+  .social-media-container span {
+    font-size: 11px;
+  }
+}
+
+/* smaller smartphones */
+@media (max-width: 359px){
+ #rocket-gif {
+  display: none;
+ }
+}
+
+
 /* animations */
 @keyframes rocket-slide {
   0% {

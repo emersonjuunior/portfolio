@@ -9,7 +9,7 @@ const Projects = () => {
   const [category, setCategory] = useState("Todos");
   const [activeButton, setActiveButton] = useState("1");
   const [isVisible, setIsVisible] = useState(true);
-  const text = useTypeAnimation("rojetos", "250")
+  const text = useTypeAnimation("rojetos", "250");
 
   const changeCategory = (value) => {
     setIsVisible(false);
@@ -17,6 +17,7 @@ const Projects = () => {
     setTimeout(() => {
       setCategory(value);
       setIsVisible(true);
+      console.log(isVisible);
     }, 600);
   };
 
@@ -80,9 +81,8 @@ const Projects = () => {
         </button>
       </div>
       <div
-        className={`project-cards-container ${
-          isVisible ? "active-animation" : ""
-        }`}
+        className="project-cards-container"
+        id={isVisible ? "active-animation" : ""}
       >
         {projects.map((project, index) => {
           const arrCategories = useFilterTechnologies(project.technologies);

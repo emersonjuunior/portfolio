@@ -36,11 +36,11 @@ const Contacts = () => {
           <h1 className="section-h1">Contatos</h1>
         </div>
         <div id="contacts-subtitle-container">
-          <h2>
+          <h3 className="subtitle">
             Atualmente estou em busca de <span>novas oportunidades</span>!
             Ficarei muito feliz em <span>receber seu contato</span>, seja para
             dúvidas, feedbacks ou até mesmo para conversar :)
-          </h2>
+          </h3>
         </div>
         <div id="rocket-container">
           <button
@@ -48,19 +48,15 @@ const Contacts = () => {
             id="like-portfolio-btn"
             onClick={handleLike}
           >
-            <div className="like-btn-container">
-              Curtir Portfolio
-              <div className="like-btn-wrapper">
-                <i
-                  className={
-                    activeLike
-                      ? "fa-solid fa-heart like-heart"
-                      : "fa-regular fa-heart like-heart"
-                  }
-                ></i>
-                <span>{likes}</span>
-              </div>
-            </div>
+            Curtir Portfolio
+            <i
+              className={
+                activeLike
+                  ? "fa-solid fa-heart like-heart"
+                  : "fa-regular fa-heart like-heart"
+              }
+            ></i>
+            <span>{likes}</span>
           </button>
           <img id="rocket-gif" src="/rocket.gif" alt="Foguete" />
         </div>
