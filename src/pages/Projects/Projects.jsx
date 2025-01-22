@@ -95,7 +95,9 @@ const Projects = () => {
                   className="project-image-background"
                   style={{ backgroundImage: `url(${project.image})` }}
                 ></div>
-                <button className="project-button">Acessar</button>
+                <a className="project-button" href={project.deploy} target="_blank">
+                  Acessar
+                </a>
               </div>
               <div className="project-info-container">
                 <div className="card-top-container">

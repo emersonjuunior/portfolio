@@ -1,6 +1,7 @@
 import "./Home.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import {Link} from "react-router-dom"
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -29,9 +30,11 @@ const Home = () => {
             Atualmente, busco <span>novas oportunidades</span>.
           </p>
           <div id="home-button-container">
+            <Link to="/about">
             <button className="primary-button" id="main-button">
               Ver portfolio
             </button>
+            </Link>
           </div>
         </div>
       </div>

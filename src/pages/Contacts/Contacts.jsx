@@ -85,7 +85,7 @@ const Contacts = () => {
           </div>
           <div className="planet planet-2">
             <a
-              href="https://www.linkedin.com/in/emerson-junior-102277280/"
+              href="https://www.linkedin.com/in/emerson-jrr/"
               target="_blank"
             >
               <div className="planet-wrapper planet-wrapper-2">

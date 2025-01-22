@@ -22,27 +22,27 @@
 
 #menu-nav-1 {
   transform: translateY(-10px);
-  animation: menu-nav-animation 0.4s ease forwards;
+  animation: menu-nav-animation 0.2s ease forwards;
 }
 
 #menu-nav-2 {
   transform: translateY(-60px);
-  animation: menu-nav-animation .8s ease forwards;
+  animation: menu-nav-animation .6s ease forwards;
 }
 
 #menu-nav-3 {
   transform: translateY(-110px);
-  animation: menu-nav-animation 1.2s ease forwards;
+  animation: menu-nav-animation 1s ease forwards;
 }
 
 #menu-nav-4 {
   transform: translateY(-160px);
-  animation: menu-nav-animation 1.6s ease forwards;
+  animation: menu-nav-animation 1.4s ease forwards;
 }
 
 #menu-nav-5 {
   transform: translateY(-210px);
-  animation: menu-nav-animation 2s ease forwards;
+  animation: menu-nav-animation 1.8s ease forwards;
 }
 
 @keyframes menu-nav-animation {
