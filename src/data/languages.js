@@ -23,6 +23,12 @@ export const languages = [{
     backIcon: "devicon-react-original colored",
 },
 {
+    icon: "devicon-tailwindcss-original",
+    name:"Tailwind",
+    description: "Para estilizar elementos utilizando classes predefinidas, aumentando a eficiência dos estilos.",
+    backIcon: "devicon-tailwindcss-plain colored"
+},
+{
     icon: "devicon-sass-plain",
     name: "Sass",
     description: "Para aprimorar o CSS, melhorando a escrita e manutenção dos estilos.",

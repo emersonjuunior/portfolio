@@ -21,6 +21,9 @@ export const useFilterTechnologies = (arr) => {
   if (arr.includes("firebase")) {
     technologies.push("7");
   }
+  if(arr.includes("tailwind")){
+    technologies.push("8")
+  }
 
   return technologies;
 };

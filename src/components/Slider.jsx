@@ -69,6 +69,11 @@ export default function Slider() {
                     <img src="/css.jpg" alt="Certificado CSS" />
                   </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                  <div className="img-wrapper">
+                    <img src="/tailwind.jpg" alt="Certificado Tailwind CSS" />
+                  </div>
+                </SwiperSlide>
               </Swiper>
             </div>
           </div>

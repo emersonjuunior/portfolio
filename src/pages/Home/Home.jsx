@@ -25,8 +25,7 @@ const Home = () => {
         </div>
         <div id="main-description">
           <p>
-            Eu sou um <span>desenvolvedor front-end</span> (com conhecimentos em
-            back-end) apaixonado na construção de experiências digitais.
+            Eu sou um <span>desenvolvedor front-end</span> apaixonado na construção de experiências digitais.
             Atualmente, busco <span>novas oportunidades</span>.
           </p>
           <div id="home-button-container">

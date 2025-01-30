@@ -21,7 +21,7 @@ const About = () => {
         <div id="about-text">
           <p className="about-p">
             <span className="first-letter">M</span>eu interesse por tecnologia
-            sempre existiu desde a infância, quando passava horas refletindo
+            sempre existiu, desde quando passava horas refletindo
             sobre o que havia por trás dos softwares presentes no meu dia a dia.
             A ideia de buscar soluções inteligentes e inovadoras para problemas
             já existentes continua me motivando até hoje.
@@ -32,7 +32,7 @@ const About = () => {
             desenvolvimento front-end, criando componentes reutilizáveis e
             interfaces intuitivas e responsivas. Também possuo experiência em
             integração de APIs, metodologias ágeis (SCRUM), além de
-            conhecimentos em banco de dados.
+            já ter desenvolvido no back-end com tecnologias como .NET e C#.
           </p>
           <p className="about-p" id="p-3">
             <span className="first-letter">M</span>eu objetivo é estar sempre em

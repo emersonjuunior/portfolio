@@ -141,6 +141,9 @@ const Projects = () => {
                 {arrCategories.includes("7") && (
                   <i className="devicon-firebase-plain"></i>
                 )}
+                {arrCategories.includes("8") && (
+                  <i className="devicon-tailwindcss-plain"></i>
+                )}
               </div>
             </div>
           );

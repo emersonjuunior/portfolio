@@ -37,7 +37,8 @@ export const projects = [
     categories: ["Todos"],
     technologies: ["html", "css", "js"],
     github: "pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes",
-    deploy: "https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/codigo-fonte/pages/index.html",
+    deploy:
+      "https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/codigo-fonte/pages/index.html",
   },
   {
     name: "Secret Word",
@@ -48,6 +49,26 @@ export const projects = [
     technologies: ["html", "css", "js", "react"],
     github: "secret-word",
     deploy: "https://emersonjuunior.github.io/secret-word",
+  },
+  {
+    name: "Interface Uber",
+    description:
+      "Um clone da interface do site da Uber, desenvolvido com Tailwind CSS para treinar estilização responsiva e boas práticas de design moderno.",
+    image: "/tailwind-uber.jpg",
+    categories: ["Todos"],
+    technologies: ["html", "css", "tailwind"],
+    github: "tailwind-uber",
+    deploy: "https://emersonjuunior.github.io/tailwind-uber",
+  },
+  {
+    name: "Interface DevHouse",
+    description:
+      " Interface inspirada em aplicativos de aluguel de apartamentos e casas, semelhante a plataformas como Airbnb. Desenvolvida com Tailwind CSS para aprimorar habilidades em estilização responsiva e design moderno.",
+    image: "/devhouse.jpg",
+    categories: ["Todos"],
+    technologies: ["html", "css", "tailwind", "js"],
+    github: "devhouse",
+    deploy: "https://emersonjuunior.github.io/devhouse",
   },
   {
     name: "Calculadora IMC",
