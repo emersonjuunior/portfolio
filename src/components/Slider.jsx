@@ -31,19 +31,24 @@ export default function Slider() {
                 modules={[Navigation, Pagination]}
                 navigation
                 pagination={{ clickable: true }}
-                slidesPerView={2} 
-                centeredSlides={true} 
-                loop={true} 
-                grabCursor={true} 
+                slidesPerView={2}
+                centeredSlides={true}
+                loop={true}
+                grabCursor={true}
                 breakpoints={{
                   300: {
                     spaceBetween: 100,
                   },
                   767: {
-                    spaceBetween: 20
-                  }
+                    spaceBetween: 20,
+                  },
                 }}
               >
+                <SwiperSlide>
+                  <div className="img-wrapper">
+                    <img src="/puc.jpg" alt="Certificado PUC Minas" />
+                  </div>
+                </SwiperSlide>
                 <SwiperSlide>
                   <div className="img-wrapper">
                     <img src="/react.jpg" alt="Certificado React" />
@@ -56,7 +61,10 @@ export default function Slider() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="img-wrapper">
-                    <img src="/inovacao.jpg" alt="Certificado Inovação PUC Minas" />
+                    <img
+                      src="/inovacao.jpg"
+                      alt="Certificado Inovação PUC Minas"
+                    />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
