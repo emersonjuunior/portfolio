@@ -9,20 +9,23 @@ export const useFilterTechnologies = (arr) => {
   if (arr.includes("js")) {
     technologies.push("3");
   }
-  if (arr.includes("c#")) {
-    technologies.push("4");
+  if(arr.includes("ts")){
+    technologies.push("4")
   }
-  if (arr.includes(".net")) {
+  if (arr.includes("c#")) {
     technologies.push("5");
   }
-  if (arr.includes("react")) {
+  if (arr.includes(".net")) {
     technologies.push("6");
   }
-  if (arr.includes("firebase")) {
+  if (arr.includes("react")) {
     technologies.push("7");
   }
+  if (arr.includes("firebase")) {
+    technologies.push("8");
+  }
   if(arr.includes("tailwind")){
-    technologies.push("8")
+    technologies.push("9")
   }
 
   return technologies;

@@ -42,8 +42,8 @@ const About = () => {
           </p>
           <div id="about-btn-container">
             <a
-              href="/Currículo_Desenvolvedor_Emerson_Junior.pdf"
-              download="/Currículo_Desenvolvedor_Emerson_Junior.pdf"
+              href="/Currículo_Desenvolvedor_FrontEnd_Emerson_Junior.pdf"
+              download="/Currículo_Desenvolvedor_FrontEnd_Emerson_Junior.pdf"
             >
               <button className="primary-button" id="about-button">
                 <i className="download fa-solid fa-file-arrow-down"></i> Baixar

@@ -129,21 +129,25 @@ const Projects = () => {
                 {arrCategories.includes("3") && (
                   <i className="devicon-javascript-plain"></i>
                 )}
-                {arrCategories.includes("4") && (
-                  <i className="devicon-csharp-plain"></i>
+                  {arrCategories.includes("4") && (
+                  <i className="devicon-typescript-plain"></i>
                 )}
                 {arrCategories.includes("5") && (
-                  <i className="devicon-dotnetcore-plain"></i>
+                  <i className="devicon-csharp-plain"></i>
                 )}
                 {arrCategories.includes("6") && (
-                  <i className="devicon-react-original"></i>
+                  <i className="devicon-dotnetcore-plain"></i>
                 )}
                 {arrCategories.includes("7") && (
-                  <i className="devicon-firebase-plain"></i>
+                  <i className="devicon-react-original"></i>
                 )}
                 {arrCategories.includes("8") && (
+                  <i className="devicon-firebase-plain"></i>
+                )}
+                {arrCategories.includes("9") && (
                   <i className="devicon-tailwindcss-plain"></i>
                 )}
+              
               </div>
             </div>
           );

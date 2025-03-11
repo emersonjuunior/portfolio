@@ -56,6 +56,11 @@ export default function Slider() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="img-wrapper">
+                    <img src="/typescript.jpg" alt="Certificado TypeScript" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="img-wrapper">
                     <img src="/javascript.jpg" alt="Certificado JavaScript" />
                   </div>
                 </SwiperSlide>

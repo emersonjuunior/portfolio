@@ -41,6 +41,16 @@ export const projects = [
       "https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/codigo-fonte/pages/index.html",
   },
   {
+    name: "TypeScript To Do",
+    description:
+      "Projeto desenvolvido para praticar a integração do TypeScript com React. A aplicação permite cadastrar, atualizar, excluir e editar tarefas.",
+    image: "/typescript-to-do.jpg",
+    categories: ["Todos"],
+    technologies: ["ts", "react", "tailwind"],
+    github: "typescript-to-do",
+    deploy: "https://typescript-to-do-gilt.vercel.app/",
+  },
+  {
     name: "Secret Word",
     description:
       'Desenvolvido em React, o projeto se consiste em um jogo de adivinhação, baseado no famoso "jogo da forca". O jogador deve descobrir a palavra secreta a partir de pistaas fornecidas, com pontuação por acertos.',
@@ -56,7 +66,7 @@ export const projects = [
       "Um clone da interface do site da Uber, desenvolvido com Tailwind CSS para treinar estilização responsiva e boas práticas de design moderno.",
     image: "/tailwind-uber.jpg",
     categories: ["Todos"],
-    technologies: ["html", "css", "tailwind"],
+    technologies: ["html", "tailwind"],
     github: "tailwind-uber",
     deploy: "https://emersonjuunior.github.io/tailwind-uber",
   },
@@ -66,7 +76,7 @@ export const projects = [
       " Interface inspirada em aplicativos de aluguel de apartamentos e casas, semelhante a plataformas como Airbnb. Desenvolvida com Tailwind CSS para aprimorar habilidades em estilização responsiva e design moderno.",
     image: "/devhouse.jpg",
     categories: ["Todos"],
-    technologies: ["html", "css", "tailwind", "js"],
+    technologies: ["html", "tailwind", "js"],
     github: "devhouse",
     deploy: "https://emersonjuunior.github.io/devhouse",
   },
