@@ -43,7 +43,7 @@ export const projects = [
   {
     name: "TypeScript To Do",
     description:
-      "Projeto desenvolvido para praticar a integração do TypeScript com React. A aplicação permite cadastrar, atualizar, excluir e editar tarefas.",
+      "Projeto desenvolvido para praticar a integração do TypeScript com React. A aplicação permite cadastrar, atualizar, excluir e editar tarefas. O armazenamento foi feito com Local Storage.",
     image: "/typescript-to-do.jpg",
     categories: ["Todos"],
     technologies: ["ts", "react", "tailwind"],
